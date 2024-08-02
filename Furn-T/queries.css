@@ -1,0 +1,624 @@
+/* rem and em do not depend on html default font-size in media queries. Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+/* For screen sizes below 1344px, the em value is
+1172/16(html default font-size) = 73.25em */
+
+/* Only em units works in media queries */
+@media (max-width: 73.25em) {
+	.nav-item {
+		font-size: 1.4rem;
+		padding: 1.2rem 0;
+	}
+
+	.nav-link.login-header {
+		font-size: 1.2rem;
+		padding: 1.2rem;
+	}
+
+	.nav-link.nav-link-main {
+		font-size: 1.2rem;
+	}
+
+	.container {
+		max-width: 120rem;
+	}
+
+	.executive::before {
+		font-size: 1rem;
+		right: -5.2rem;
+		top: 3rem;
+	}
+}
+
+/* Screen below 1100px */
+@media (max-width: 68.75em) {
+	.heading-main {
+		font-size: 3.6rem;
+	}
+
+	.offers-wrap {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.offers-wrap.container,
+	.logos-offer {
+		max-width: 100rem;
+	}
+
+	.logos-offer {
+		gap: 2rem;
+	}
+
+	.heading-secondary.footer-header {
+		font-size: 1.6rem;
+	}
+}
+
+/* Screen below 1088px */
+@media (max-width: 68em) {
+	.section-trust.container {
+		max-width: 100rem;
+	}
+
+	.logos {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "div1 div2 div3 div4" "div5 div5 div5 div5";
+	}
+
+	.div1 {
+		grid-area: div1;
+	}
+	.div2 {
+		grid-area: div2;
+	}
+	.div3 {
+		grid-area: div3;
+	}
+	.div4 {
+		grid-area: div4;
+	}
+	.div5 {
+		grid-area: div5;
+	}
+}
+
+/* Screens below 941px */
+@media (max-width: 58.813em) {
+	.service-number {
+		font-size: 6.4rem;
+	}
+	.service-text-header {
+		font-size: 1.6rem;
+	}
+	.service-text {
+		font-size: 1.4rem;
+	}
+
+	.service-img {
+		width: 100%;
+	}
+}
+
+/* Screens below 919px */
+@media (max-width: 57.44em) {
+	.btn-cta {
+		font-size: 1.8rem;
+	}
+
+	.btn-learn-more {
+		font-size: 1.8rem;
+	}
+
+	.cta-header {
+		font-size: 3.6rem;
+	}
+	.cta-action {
+		font-size: 1.8rem;
+	}
+	.input {
+		font-size: 1.4rem;
+	}
+	.btn-form {
+		font-size: 1.4rem;
+	}
+}
+
+/* Screens below 882px */
+@media (max-width: 55.125em) {
+	.main-header {
+		position: relative;
+	}
+	.nav {
+		display: none;
+	}
+
+	.main-nav-list {
+		flex-direction: column;
+		gap: 0;
+		position: absolute;
+		top: 8rem;
+		left: 0;
+		text-align: left;
+		color: #fff;
+		background-color: #946e10;
+	}
+
+	.main-nav-list .nav-item {
+		padding: 1.2rem 2.5rem;
+	}
+
+	.nav-link.main {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: block;
+	}
+
+	.menu-icon {
+		display: block;
+		height: 4.7rem;
+		width: 4.7rem;
+		align-self: flex-end;
+		cursor: pointer;
+	}
+
+	.show-menu {
+		top: 0;
+		left: 16rem;
+		border-radius: 0;
+		padding: 1.2rem 1.4rem;
+	}
+
+	.show-menu:nth-child(6) {
+		top: -12.5rem;
+	}
+
+	.relative .nav-item:hover {
+		color: #fff;
+	}
+
+	.hero {
+		grid-template-columns: 1fr;
+		place-items: center;
+	}
+
+	.hero-heading {
+		font-size: 4.4rem;
+		text-align: center;
+	}
+
+	.hero-description {
+		text-align: center;
+	}
+
+	.hero-img {
+		display: none;
+	}
+
+	.socials {
+		top: 80%;
+	}
+
+	.heading-primary {
+		font-size: 2.4rem;
+	}
+
+	.heading-secondary {
+		font-size: 1.4rem;
+	}
+
+	.logos {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "div1 div2 div2 div3 div4" "div5 div6 div6 div6 div7";
+	}
+
+	.div1 {
+		grid-area: div1;
+	}
+	.div2 {
+		grid-area: div2;
+	}
+	.div3 {
+		grid-area: div3;
+	}
+	.div4 {
+		grid-area: div6;
+	}
+	.div5 {
+		grid-area: div4;
+	}
+
+	.logo-offer {
+		height: 3.6rem;
+	}
+
+	.section-footer {
+		padding-bottom: 0;
+	}
+
+	.footer {
+		font-size: 1.4rem;
+	}
+
+	.footer-grid {
+		grid-template-columns: 3fr repeat(4, 1fr);
+		grid-template-rows: 2fr 1fr;
+		column-gap: 2.4rem;
+	}
+
+	.footer-copyright {
+		grid-row: 2;
+		grid-column: 1 / 4;
+	}
+
+	.footer-getApp {
+		grid-column: 4 / 6;
+		grid-row: 2;
+		text-align: center;
+		transform: translateY(-10%);
+	}
+
+	.getApp {
+		width: 60%;
+	}
+}
+
+/* Screens below 827px */
+@media (max-width: 51.69em) {
+	.logo {
+		height: 3rem;
+	}
+}
+
+/* Screens below 793px */
+@media (max-width: 49.56em) {
+	.grid--2--cols-cta {
+		grid-template-columns: 1fr;
+	}
+
+	.cta-form {
+		background-image: linear-gradient(
+				to right bottom,
+				rgba(235, 151, 78, 0.35),
+				rgba(230, 125, 34, 0.35)
+			),
+			url("img/call_center_agent.png");
+		background-size: cover;
+		background-position: center;
+
+		border-radius: 2rem;
+	}
+
+	.cta-img-box {
+		display: none;
+	}
+
+	.form {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.btn-form {
+		border-radius: 1.4rem;
+	}
+}
+
+/* Screens below 740px */
+@media (max-width: 46.25em) {
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
+	}
+}
+
+/* Screens below 723px */
+@media (max-width: 45.19em) {
+	.list-text {
+		font-size: 1.6rem;
+	}
+
+	.color-description {
+		font-size: 1rem;
+	}
+
+	.logo-offer {
+		height: 3rem;
+	}
+}
+
+/* Screens below 687px */
+@media (max-width: 42.94em) {
+	.logo {
+		height: 1.8rem;
+	}
+
+	.logos {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "div1 div2 div3 div4" "div5 div6 div6 div7";
+	}
+
+	.offer-price {
+		padding-top: 2.8rem;
+	}
+
+	.offer-currency.margin-bottom-bg {
+		margin-bottom: 2.8rem;
+	}
+
+	.offer-header {
+		font-size: 1.6rem;
+		padding-top: 0;
+	}
+
+	.bronze-color,
+	.silver-color,
+	.gold-color {
+		width: 3.5rem;
+	}
+
+	.list-text {
+		font-size: 1.4rem;
+	}
+
+	.testimonials-text-header {
+		font-size: 1.4rem;
+	}
+	.testimonials-text {
+		font-size: 1.6rem;
+	}
+	.client-name {
+		font-size: 1.4rem;
+	}
+
+	.neteller {
+		height: 1.5rem;
+	}
+}
+
+/* Screens below 653px */
+@media (max-width: 40.81em) {
+	.offers-wrap {
+		grid-template-columns: 30rem;
+		place-content: center;
+	}
+
+	.service-number {
+		font-size: 4.4rem;
+	}
+	.service-text-header {
+		font-size: 1.2rem;
+	}
+	.service-text {
+		font-size: 1.2rem;
+	}
+}
+
+/* Screens below 553px */
+@media (max-width: 34.56em) {
+	.header-logo-icon {
+		height: 4.8rem;
+		width: 4.8rem;
+	}
+
+	.menu-icon {
+		height: 3.6rem;
+		width: 3.6rem;
+	}
+
+	.login-btn {
+		display: none;
+	}
+
+	.nav-link.login-header {
+		background-color: transparent;
+		color: #946e10;
+	}
+
+	.login-icon {
+		width: 3.6rem;
+		height: 3.6rem;
+	}
+
+	.heading-main {
+		font-size: 3.6rem;
+	}
+
+	.hero-description {
+		font-size: 1.8rem;
+	}
+
+	.our-service {
+		grid-template-columns: 1fr;
+		gap: 4rem;
+	}
+
+	.service-img {
+		width: 60%;
+	}
+
+	.service-img-box {
+		padding-bottom: 2rem;
+	}
+
+	.service-number {
+		display: flex;
+		justify-content: left;
+	}
+
+	.service-text-header {
+		text-align: left;
+	}
+
+	.service-text {
+		text-align: left;
+	}
+
+	.service-text-box:nth-child(2) {
+		grid-row: 1;
+	}
+
+	.service-text-box:nth-child(6) {
+		grid-row: 5;
+	}
+
+	.logos-offer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.footer {
+		font-size: 1.2rem;
+	}
+
+	.footer-header {
+		margin-bottom: 2.4rem !important;
+	}
+
+	.heading-secondary.footer-header {
+		font-size: 1.4rem;
+	}
+
+	.footer-copyright {
+		place-content: center;
+	}
+}
+
+/* Screens below 535px */
+@media (max-width: 33.44em) {
+	.gallery {
+		gap: 2rem;
+	}
+
+	.testimonial-description {
+		font-size: 2.4rem;
+	}
+
+	.testimonials-quotation {
+		font-size: 15rem;
+	}
+
+	.testimonials-img {
+		margin-top: 10rem;
+	}
+	.testimonial-img {
+		width: 60%;
+	}
+
+	.testimonials-text-header {
+		font-size: 1.2rem;
+	}
+	.testimonials-text {
+		font-size: 1.2rem;
+	}
+	.client-name {
+		font-size: 1.2rem;
+	}
+	.footer {
+		font-size: 1rem;
+	}
+
+	.heading-secondary.footer-header {
+		font-size: 1.2rem;
+	}
+}
+
+/* Screens below 463px */
+@media (max-width: 29.0625em) {
+	html {
+		font-size: 50%;
+	}
+
+	.heading-main {
+		font-size: 2.8rem;
+	}
+}
+
+/* Screens below 366px */
+@media (max-width: 22.875em) {
+	.logos {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "div1 div2 div3" "div4 div5 div5";
+	}
+
+	.div1 {
+		grid-area: div1;
+	}
+	.div2 {
+		grid-area: div2;
+	}
+	.div3 {
+		grid-area: div3;
+	}
+	.div4 {
+		grid-area: div5;
+	}
+	.div5 {
+		grid-area: div4;
+	}
+
+	.footer-grid {
+		grid-template-columns: 3fr repeat(3, 1fr);
+		grid-template-rows: 1fr 1fr 1fr;
+		row-gap: 2rem;
+	}
+
+	.footer-resources {
+		grid-column: 2 / 3;
+		grid-row: 2;
+	}
+
+	.footer-getApp {
+		grid-column: 3 / 6;
+		grid-row: 2;
+		transform: translateY(0%);
+	}
+
+	.footer-copyright {
+		grid-column: span 4;
+		grid-row: 3;
+		padding-top: 0;
+	}
+}
+
+/* Screens below 345px */
+@media (max-width: 21.563em) {
+	.btn {
+		padding: 1.2rem 2.4rem;
+	}
+
+	.clients-img {
+		width: 4rem;
+	}
+
+	.logos-offer {
+		gap: 1.2rem;
+	}
+
+	.logo-offer {
+		height: 2.4rem;
+	}
+
+	.neteller {
+		height: 1.4rem;
+	}
+}
+
+/* Screens below 319px */
+@media (max-width: 19.94em) {
+	.hero-btn {
+		flex-direction: column;
+	}
+
+	.logos {
+		gap: 1rem;
+	}
+
+	.logo {
+		height: 1.4rem;
+	}
+}

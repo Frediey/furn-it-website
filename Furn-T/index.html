@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="reusables.css" />
+		<link rel="stylesheet" href="js.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="queries.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<title>FURN-ITURES</title>
+	</head>
+	<body>
+		<header id="home" class="header">
+			<div class="main-header">
+				<div class="header-logo">
+					<ion-icon class="header-logo-icon" name="logo-foursquare"></ion-icon>
+					<ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+				</div>
+
+				<div class="nav">
+					<ul class="main-nav-list">
+						<li class="relative">
+							<p class="nav-item">company</p>
+							<ul class="show-menu hidden">
+								<li><a class="nav-link nav-link-main" href="#">About Us</a></li>
+								<li>
+									<a class="nav-link nav-link-main" href="#">Organization</a>
+								</li>
+								<li><a class="nav-link nav-link-main" href="#">Careers</a></li>
+								<li><a class="nav-link nav-link-main" href="#">Services</a></li>
+							</ul>
+						</li>
+						<li class="relative" href="#gallery">
+							<p class="nav-item">gallery</p>
+							<ul class="show-menu hidden">
+								<li><a class="nav-link nav-link-main" href="#">Images</a></li>
+								<li>
+									<a class="nav-link nav-link-main" href="#">Testimonials</a>
+								</li>
+								<li><a class="nav-link nav-link-main" href="#">Design</a></li>
+							</ul>
+						</li>
+						<li class="relative">
+							<p class="nav-item">services</p>
+							<ul class="show-menu hidden">
+								<li><a class="nav-link nav-link-main" href="#">Layout</a></li>
+								<li><a class="nav-link nav-link-main" href="#">Planning</a></li>
+								<li><a class="nav-link nav-link-main" href="#">Design</a></li>
+								<li>
+									<a class="nav-link nav-link-main" href="#">implementation</a>
+								</li>
+								<li>
+									<a class="nav-link nav-link-main" href="#">Consultation</a>
+								</li>
+							</ul>
+						</li>
+						<li class="relative">
+							<p class="nav-item">offers</p>
+							<ul class="show-menu hidden">
+								<li>
+									<a class="nav-link nav-link-main" href="#"
+										>Standard&nbsp;Package</a
+									>
+								</li>
+								<li>
+									<a class="nav-link nav-link-main" href="#"
+										>Silver&nbsp;Package</a
+									>
+								</li>
+								<li>
+									<a class="nav-link nav-link-main" href="#"
+										>Executive&nbsp;Package</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="relative">
+							<p class="nav-item">testimonials</p>
+							<ul class="show-menu hidden">
+								<li>
+									<a class="nav-link nav-link-main" href="#">Testimonials</a>
+								</li>
+							</ul>
+						</li>
+						<li class="relative">
+							<p class="nav-item">talk to agent</p>
+							<ul class="show-menu hidden">
+								<li><a class="nav-link nav-link-main" href="#">FAQ</a></li>
+								<li>
+									<a class="nav-link nav-link-main" href="#">Payment Methods</a>
+								</li>
+								<li><a class="nav-link nav-link-main" href="#">How to</a></li>
+							</ul>
+						</li>
+						<li class="relative">
+							<a
+								class="nav-link main login-header flex flex-sm"
+								href="login.html"
+								><span class="login-btn">Login</span
+								><ion-icon class="login-icon" name="log-in-outline"></ion-icon>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="mobile-nav">
+					<a class="nav-link login-header flex flex-sm" href="login.html"
+						><span class="login-btn">Login</span
+						><ion-icon class="login-icon" name="log-in-outline"></ion-icon>
+					</a>
+				</div>
+			</div>
+
+			<div class="socials">
+				<a class="no-border" href="#">
+					<ion-icon
+						class="login-icon facebook-socials bg-fb"
+						name="logo-facebook"
+					></ion-icon
+				></a>
+				<a class="no-border" href="#"
+					><ion-icon
+						class="login-icon instagram-socials bg-insta"
+						name="logo-instagram"
+					></ion-icon
+				></a>
+				<a class="no-border" href="#"
+					><ion-icon
+						class="login-icon twitter-socials bg-twit"
+						name="logo-twitter"
+					></ion-icon
+				></a>
+			</div>
+
+			<div class="back-to-top">
+				<a href="#home">
+					<ion-icon
+						class="top-icon"
+						aria-label="Back to top"
+						name="caret-up-outline"
+					></ion-icon>
+				</a>
+			</div>
+
+			<div class="header-hero container">
+				<div class="hero">
+					<div class="hero-text-box">
+						<p class="heading-main hero-heading">
+							Interior decoration at its peak
+						</p>
+						<p class="hero-description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+							ipsum veritatis architecto autem officia accusamus, consequatur
+							corporis ipsam, neque, iste magnam quisquam unde similique
+							deleniti. Delectus nulla debitis blanditiis ex!
+						</p>
+						<div class="hero-btn flex flex-sm">
+							<a class="btn btn-cta" href="#">Sign up</a>
+							<a class="btn btn-learn-more" href="#"
+								>Learn more &nbsp; &rarr;</a
+							>
+						</div>
+					</div>
+
+					<div class="hero-img-box">
+						<img
+							class="hero-img"
+							src="hero/hero2.jpg"
+							alt="Well arranged table and
+					    chairs with hanging bulbs"
+						/>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="section-trust container">
+			<div class="trust-header">
+				<p class="heading-secondary">Trusted by</p>
+			</div>
+
+			<div class="logos">
+				<div class="div1">
+					<img class="logo" src="logos/business-insider.png" />
+				</div>
+				<div class="div2"><img class="logo" src="logos/techcrunch.png" /></div>
+				<div class="div3"><img class="logo" src="logos/forbes.png" /></div>
+				<div class="div4">
+					<img class="logo" src="logos/the-new-york-times.png" />
+				</div>
+				<div class="div5">
+					<img class="logo last-child" src="logos/usa-today.png" />
+				</div>
+			</div>
+		</section>
+
+		<section id="gallery" class="section-gallery">
+			<div class="gallery-header">
+				<p class="heading-primary margin-bottom-sm">
+					Checkout our gallery of arts
+				</p>
+				<p class="gallery-description">
+					Over the decades we have delivered state of the arts jobs. Checkout
+					our gallery
+				</p>
+			</div>
+
+			<div class="gallery container grid grid--3--cols grid-gap-sm">
+				<div class="gallery-container">
+					<img
+						class="gallery-img"
+						alt="well organised bussiness environment"
+						src="gallery/business_1.jpg"
+					/>
+				</div>
+				<div class="gallery-container">
+					<img
+						class="gallery-img"
+						alt="picture of a well structured kitchen"
+						src="gallery/kitchen_1.jpg"
+					/>
+				</div>
+				<div class="gallery-container">
+					<img
+						class="gallery-img"
+						alt="well organised living room"
+						src="gallery/living_room_1.jpg"
+					/>
+				</div>
+				<div class="gallery-container">
+					<img
+						class="gallery-img"
+						alt="organised office space"
+						src="gallery/office_1.jpg"
+					/>
+				</div>
+				<div class="gallery-container">
+					<img
+						class="gallery-img"
+						alt="neatly arranged room"
+						src="gallery/room_1.jpg"
+					/>
+				</div>
+				<div class="gallery-container">
+					<img
+						class="gallery-img"
+						alt="home office workspace"
+						src="gallery/workspace_1.jpg"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section id="services" class="section-our-service container">
+			<div class="service-header">
+				<p class="heading-primary margin-bottom-sm">what to expect from us</p>
+				<p class="service-sub-header">
+					A brief description of how we give you a memorable experience
+				</p>
+			</div>
+
+			<div class="our-service container grid grid-gap-bg grid--2--cols">
+				<div class="service-img-box">
+					<img
+						class="service-img"
+						src="img/no-complexity.jpg"
+						alt="image of a riddle-box"
+					/>
+				</div>
+
+				<div class="service-text-box">
+					<span class="service-number">01</span>
+					<p class="service-text-header margin-bottom-md">No complexity</p>
+					<p class="service-text">
+						Our designs are straight-forward and less complicated. Lorem ipsum
+						dolor sit amet consectetur adipisicing elit. Obcaecati officiis eum
+						reiciendis deleniti minima consequuntur minus, distinctio qui
+						repudiandae delectus est, laborum ipsam nulla hic temporibus quis
+						nemo! Accusamus, iusto!
+					</p>
+				</div>
+
+				<div class="service-text-box">
+					<span class="service-number">02</span>
+					<p class="service-text-header margin-bottom-md">Nature friendly</p>
+					<p class="service-text">
+						We infuse the beauty of nature to give you the perfect touch. Lorem
+						ipsum dolor sit amet consectetur adipisicing elit. Debitis quo
+						itaque nam iste voluptates consequatur possimus non veritatis dolor,
+						quos accusantium eum? Id quam itaque esse quis recusandae reiciendis
+						quo?
+					</p>
+				</div>
+
+				<div class="service-img-box">
+					<img
+						class="service-img"
+						src="img/nature-friendly.jpg"
+						alt="image of an apartment with flower in a vase"
+					/>
+				</div>
+
+				<div class="service-img-box">
+					<img
+						class="service-img"
+						src="img/minimalistic.jpg"
+						alt="image of a simply arranged apartment"
+					/>
+				</div>
+
+				<div class="service-text-box">
+					<span class="service-number">03</span>
+					<p class="service-text-header margin-bottom-md">Minimalistic</p>
+					<p class="service-text">
+						We give you the very best while making it simple and attractive.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+						sapiente labore, vero quo recusandae est exercitationem, officiis
+						magni, quod officia maxime eius sequi architecto vitae eum veritatis
+						distinctio ipsam optio?
+					</p>
+				</div>
+
+				<div class="service-text-box">
+					<span class="service-number">04</span>
+					<p class="service-text-header margin-bottom-md">Cost effective</p>
+					<p class="service-text">
+						You do not have to break the bank to give your home that glamorous
+						feel. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						Quaerat consectetur quis ipsa rerum repellendus iure nemo enim
+						aspernatur voluptas ab! Ipsa mollitia iusto veniam rem! Corrupti in
+						quod velit nam.
+					</p>
+				</div>
+
+				<div class="service-img-box">
+					<img
+						class="service-img"
+						src="img/cost-effective.jpg"
+						alt="image of a man sitting on gold coins"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section id="offers" class="section-offers">
+			<div class="offers-header">
+				<p class="heading-primary margin-bottom-sm">Offers and pricing</p>
+				<p class="offers-header-text">
+					Choose from a variety of offers, subscribe, then relax and leave the
+					rest to us!!!
+				</p>
+			</div>
+
+			<div class="offers-wrap container grid grid-gap-bg grid--3--cols">
+				<div class="offer standard">
+					<div class="header-container">
+						<p class="offer-price">
+							<span class="offer-currency margin-bottom-bg">$</span>
+						</p>
+						<p class="offer-header">Standard package</p>
+					</div>
+
+					<div class="list-container">
+						<div class="flex flex-sm">
+							<div class="bronze-color"></div>
+							<div class="color-description">Countryman</div>
+						</div>
+						<ul class="list">
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Plan design</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Plan implementation</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Money-Back guarantee</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-red"
+									name="close-outline"
+								></ion-icon>
+								<p class="list-text">Pay installmentally</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-red"
+									name="close-outline"
+								></ion-icon>
+								<p class="list-text">Quarterly checkup</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-red"
+									name="close-outline"
+								></ion-icon>
+								<p class="list-text">Monthly checkup</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="checkout">
+						<div class="offer-amount">$1,000</div>
+						<a class="flex flex-md checkout-btn" href="standard-payment.html">
+							<span class="offer-checkout">Checkout</span>
+							<ion-icon class="list-icon" name="cart-outline"></ion-icon
+						></a>
+					</div>
+				</div>
+
+				<div class="offer silver">
+					<div class="header-container">
+						<p class="offer-price">
+							<span class="offer-currency margin-bottom-bg">$</span>
+						</p>
+						<p class="offer-header">Silver package</p>
+					</div>
+
+					<div class="list-container">
+						<div class="flex flex-sm">
+							<div class="silver-color"></div>
+							<div class="color-description">National Reserve</div>
+						</div>
+
+						<ul class="list">
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Plan design</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Plan implementation</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Money-Back guarantee</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Pay installmentally</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Quarterly checkup</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-red"
+									name="close-outline"
+								></ion-icon>
+								<p class="list-text">Monthly checkup</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="checkout">
+						<div class="offer-amount">$2,500</div>
+						<a class="flex flex-md checkout-btn" href="standard-payment.html">
+							<span class="offer-checkout">Checkout</span>
+							<ion-icon class="list-icon" name="cart-outline"></ion-icon
+						></a>
+					</div>
+				</div>
+
+				<div class="offer executive">
+					<div class="header-container executive">
+						<p class="offer-price">
+							<span class="offer-currency margin-bottom-bg">$</span>
+						</p>
+						<p class="offer-header">Executive package</p>
+					</div>
+
+					<div class="list-container">
+						<div class="flex flex-sm">
+							<div class="gold-color"></div>
+							<div class="color-description">International Treasure</div>
+						</div>
+
+						<ul class="list">
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Plan design</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Plan implementation</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Money-Back guarantee</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Pay installmentally</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Quarterly checkup</p>
+							</li>
+							<li class="list-item">
+								<ion-icon
+									class="list-icon list-icon-green"
+									name="checkmark-outline"
+								></ion-icon>
+								<p class="list-text">Monthly checkup</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="checkout">
+						<div class="offer-amount">$5,000</div>
+						<a class="flex flex-md checkout-btn" href="standard-payment.html">
+							<span class="offer-checkout">Checkout</span>
+							<ion-icon class="list-icon" name="cart-outline"></ion-icon
+						></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container logos-offer">
+				<img
+					class="logo-offer scale-up"
+					src="Payment-methods/bank-transfer.png"
+				/>
+				<img
+					class="logo-offer scale-up"
+					src="Payment-methods/interswitch.png"
+				/>
+				<img class="logo-offer scale-up" src="Payment-methods/mastercard.png" />
+				<img class="logo-offer neteller" src="Payment-methods/neteller.png" />
+				<img class="logo-offer scale-up" src="Payment-methods/paypal.png" />
+				<img class="logo-offer scale-up" src="Payment-methods/skrill.png" />
+				<img class="logo-offer scale-up" src="Payment-methods/visa.png" />
+			</div>
+		</section>
+
+		<section id="talk-to-agent" class="section-representative container">
+			<div class="representative-header">
+				<p class="heading-primary margin-bottom-sm">
+					Talk to our representative today
+				</p>
+				<p class="rep-description">
+					We have over
+					<span class="description-number">500+</span> representative waiting to
+					talk to you. Book an appointment today
+				</p>
+			</div>
+
+			<div class="container-cta grid grid--2--cols-cta">
+				<div class="cta-form">
+					<div class="cta-text">
+						<p class="cta-header margin-bottom-bg">
+							Want to discuss directly with one of our call agents?
+						</p>
+						<p class="cta-action">fill out the form below</p>
+					</div>
+
+					<div>
+						<form class="form">
+							<input
+								class="input"
+								type="text"
+								name="firstName"
+								placeholder="First name"
+								required
+							/>
+							<input
+								class="input"
+								type="email"
+								name="email"
+								placeholder="Enter email here"
+								required
+							/>
+							<button class="btn-form btn-learn-more">Submit</button>
+						</form>
+						<p class="newsletter-text">
+							Also, subscribe for our daily newsletters
+							<a href="#" class="newsletter-link">here</a> to recieve daily
+							promotions on latest updates
+						</p>
+					</div>
+				</div>
+				<div class="cta-img-box">
+					<img class="cta-img" src="img/call_center_agent.png" />
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials" class="section-testimonials">
+			<div class="testimonials-header margin-bottom-md">
+				<p class="heading-secondary margin-bottom-sm">Testimonials</p>
+				<p class="testimonial-description">What our clients are saying</p>
+			</div>
+
+			<div class="container">
+				<div class="testimonials">
+					<div class="testimonials-quotation">
+						<span>&#8223;</span>
+					</div>
+
+					<div class="img-text-box">
+						<div class="testimonials-img margin-bottom-bg">
+							<img
+								class="testimonial-img"
+								src="testimonials/Testimonial-Cherry.jpg"
+								alt="image of a
+							client cherry"
+							/>
+						</div>
+
+						<div class="testimonials-text-box margin-bottom-md">
+							<p class="testimonials-text-header margin-bottom-sm">
+								Life made easy
+							</p>
+							<blockquote class="testimonials-text margin-bottom-md">
+								Furn-itures are the best at what they do. They've saved me the
+								stress of thinking about the look and feel of my home. Ever
+								since i came across them, life has been all but easier for me.
+								Recommending them to colleagues has never been a problem.
+							</blockquote>
+							<p class="client-name margin-bottom-sm">&mdash; Cherry Deville</p>
+						</div>
+
+						<div class="clients">
+							<div class="clients-imgs">
+								<img
+									class="clients-img"
+									alt="image of allan"
+									src="testimonials/Testimonial-Allan.jpg"
+								/>
+								<img
+									class="clients-img"
+									alt="image of pete"
+									src="testimonials/Testimonial-pete.jpg"
+								/>
+								<img
+									class="clients-img"
+									alt="image of sara"
+									src="testimonials/Testimonial-Sara.jpg"
+								/>
+								<img
+									class="clients-img"
+									alt="image of rowe"
+									src="testimonials/Testimonial-Rowe.jpg"
+								/>
+								<img
+									class="clients-img"
+									alt="image of smith"
+									src="testimonials/Testimonial-Smith.jpeg"
+								/>
+								<img
+									class="clients-img"
+									alt="image of sandy"
+									src="testimonials/Testimonial-Sandy.jpg"
+								/>
+							</div>
+							<a class="btn view-more view-more-js" href="#"
+								>View More
+								<span class="arrow-visibility hidden"
+									>&rsaquo; &rsaquo;</span
+								></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-footer">
+			<div class="container">
+				<ion-icon
+					class="footer-logo-icon margin-bottom-md"
+					name="logo-foursquare"
+				></ion-icon>
+				<div class="footer-grid footer">
+					<div class="footer-home">
+						<address class="contacts">
+							<p class="address">Block 3A Preston Northend Blvrd, LA, U.S.A</p>
+							<p>
+								<a class="footer-link" href="tel:+1-415-201-6370"
+									>+1-415-201-6370</a
+								><br />
+								<a class="footer-link" href="mailto:fundecors@gmail.com"
+									>fundecors@gmail.com</a
+								>
+							</p>
+						</address>
+					</div>
+
+					<div class="footer-company">
+						<p class="heading-secondary footer-header">Company</p>
+						<ul class="footer-list">
+							<li><a class="footer-link" href="#">About Us</a></li>
+							<li><a class="footer-link" href="#">Organization</a></li>
+							<li><a class="footer-link" href="#">Careers</a></li>
+							<li><a class="footer-link" href="#">Services</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-offers">
+						<p class="heading-secondary footer-header">Offers</p>
+						<ul class="footer-list">
+							<li><a class="footer-link" href="#">Standard</a></li>
+							<li><a class="footer-link" href="#">Silver</a></li>
+							<li><a class="footer-link" href="#">Executive</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-gallery">
+						<p class="heading-secondary footer-header">Gallery</p>
+						<ul class="footer-list">
+							<li><a class="footer-link" href="#">Gallery images</a></li>
+							<li><a class="footer-link" href="#">Testimonials</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-resources">
+						<p class="heading-secondary footer-header">Resources</p>
+						<ul class="footer-list">
+							<li><a class="footer-link" href="#">FAQ</a></li>
+							<li><a class="footer-link" href="#">Payment</a></li>
+							<li><a class="footer-link" href="#">How to</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-getApp">
+						<img class="getApp" src="logos/app-store-png-logo-33123.png" />
+					</div>
+
+					<div class="footer-copyright">
+						<p>
+							Copyright &copy; 2023 By Furn-itures Inc, All Rights Reserved,
+							<a class="footer-link" href="#">Privacy</a> and
+							<a class="footer-link" href="#">Data policy</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+.hidden {
+	display: none !important;
+}
+
+.relative {
+	position: relative;
+}
+
+/* .relative:hover {
+	transform: scale(1.1);
+} */
+
+.show-menu {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	align-items: center;
+	font-size: 1.6rem;
+	padding: 2.4rem 1.6rem;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	background-color: #946e10;
+	border-radius: 1.2rem;
+}
+
+.border-top {
+	border-top: 0.2rem solid #946e10;
+}
